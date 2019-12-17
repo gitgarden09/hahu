@@ -23,8 +23,8 @@ after_success:
   
 before_deploy:
   # Set up git user name and tag this commit
-  - git config --local user.name "unaheidi"
-  - git config --local user.email "unaheidi@gmail.com"
+  - git config --local user.name "git20191205"
+  - git config --local user.email "git20191205@163.com"
   - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
